@@ -1,6 +1,7 @@
 require 'sinatra'
 
 require_relative 'lib/parser'
+require_relative 'lib/sample'
 
 get '/' do
   erb :index
@@ -11,5 +12,7 @@ get '/submit/?' do
 end
 
 post '/submit' do
-  Parser.parse(params['file'][:filename], params['file'][:tempfile])
+  # Parser.parse(params['file'][:filename], params['file'][:tempfile])
+
+  Sample.create(business_type: 'Retail')
 end
