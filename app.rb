@@ -3,6 +3,8 @@ require 'sinatra'
 require_relative 'lib/parser'
 require_relative 'lib/sample'
 
+Mongoid.load!("config/mongoid.yml")
+
 get '/' do
   erb :index
 end
