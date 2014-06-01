@@ -1,0 +1,33 @@
+how to seed the ces mongo db from .json files
+
+follow https://www.npmjs.org/package/node-mongo-seeds
+or
+
+
+Setup:
+1. download and install node (http://nodejs.org/download/)
+2. change to the /ces_json_api/mongo_seeds directory and run the following 2 node commands
+	npm install node-mongo-seeds --save
+	npm run node-mongo-seeds setup
+
+The /mongo_seeds directory should now contain a seed.json file and a /node_modules directory.
+
+3. open the seed.json file and in line 2 replace
+	"db": "localhost/CHANGE_ME_TO_YOUR_DB_NAME"
+		with
+	"db": "localhost/ces"
+4. create a /seeds directory that contains the .json files you want to load into mongo db
+
+
+To erase the ces mongo db and repopulate at with the data in the .json files in the /seeds directory:
+5. run
+	npm run node-mongo-seeds seed
+
+
+To see the contents of the mongo db:
+6. run
+	mongo
+7. run the following two commands
+	use ces
+	db.samples.find()
+

@@ -1,0 +1,67 @@
+[{
+    "collected_on":"2014-04-01T00:00:00Z", "business_type": "Retail", "sqft": 1200,
+    "location": {
+        "latitude": 123, "longitude": 123, "region": "Lloyd Eco District", "zip_code": 97214,
+        "zip_nine": "97214+1234", "is_location_approximate": true, "business_name": "Bob's Burgers"
+    },
+    "collection_bins": [
+        {"name": "Readily Recyclable", "total_weight": 178.14, "total_percentage": 5.74, "weight_unit": "lbs",
+            "contents": [
+                {"material": "Corrugated Cardboard", "weight": 1.82, "percentage": 0.06, "weight_unit": "lbs", "is_misplaced": false, "is_contaminated": false},
+                {"material": "Mixed Paper", "weight": 41.07, "percentage": 1.32, "weight_unit": "lbs", "is_misplaced": false, "is_contaminated": false},
+                {"material": "Aluminum", "weight": 1.91, "percentage": 0.06, "weight_unit": "lbs", "is_misplaced": false, "is_contaminated": false},
+                {"material": "Mixed Metals", "weight": 7.79, "percentage": 0.25, "weight_unit": "lbs", "is_misplaced": false, "is_contaminated": false},
+                {"material": "Compost", "weight": 4.08, "percentage": 0.13, "weight_unit": "lbs", "is_misplaced": true, "is_contaminated": false},
+                {"material": "Other Recoverable Materials", "weight": 12.43, "percentage": 0.4, "weight_unit": "lbs", "is_misplaced": true, "is_contaminated": false},
+                {"material": "Non-Recoverable Materials", "weight": 13.13, "percentage": 0.42, "weight_unit": "lbs", "is_misplaced": true, "is_contaminated": false},
+                {"material": "Glass Bottles & Jars", "weight": 85.39, "percentage": 2.75, "weight_unit": "lbs", "is_misplaced": true, "is_contaminated": false},
+                {"material": "Non-Recoverable Material", "weight": 0.56, "percentage": 0.02, "weight_unit": "lbs", "is_misplaced": false, "is_contaminated": true}
+            ]
+        },
+        {
+            "name": "Compostable Materials", "total_weight": 789.99, "total_percentage": 25.45, "weight_unit": "lbs",
+            "contents": [
+                {"material": "Compostable Food & Fibers", "weight": 702.47, "percentage": 22.63, "weight_unit": "lbs", "is_misplaced": false, "is_contaminated": false},
+                {"material": "Waxed Cardboard", "weight": 73.29, "percentage": 2.36, "weight_unit": "lbs", "is_misplaced": false, "is_contaminated": false},
+                {"material": "Corrugated Cardboard", "weight": 6.14, "percentage": 0.20, "weight_unit": "lbs", "is_misplaced": false, "is_contaminated": false},
+                {"material": "Mixed Paper", "weight": 5.99, "percentage": 0.19, "weight_unit": "lbs", "is_misplaced": false, "is_contaminated": false},
+                {"material": "Readily Recyclable Materials", "weight": 0.00, "percentage": 0.00, "weight_unit": "lbs", "is_misplaced": true, "is_contaminated": false},
+                {"material": "Other Recoverable Materials", "weight": 0.11, "percentage": 0.00, "weight_unit": "lbs", "is_misplaced": true, "is_contaminated": false},
+                {"material": "Non-Recoverable Materials", "weight": 2.01, "percentage": 0.06, "weight_unit": "lbs", "is_misplaced": true, "is_contaminated": false}
+            ]
+        },
+        {
+            "name": "Other Recoverable Materials", "total_weight": 1351.33, "total_percentage": 43.53, "weight_unit": "lbs",
+            "contents": [
+                {"material": "Corrugated Cardboard", "weight": 873.40, "percentage": 28.13, "weight_unit": "lbs", "is_misplaced": false, "is_contaminated": false},
+                {"material": "Corks", "weight": 1.67, "percentage": 0.05, "weight_unit": "lbs", "is_misplaced": false, "is_contaminated": false},
+                {"material": "Preserve (Gimme #5)", "weight": 3.23, "percentage": 0.10, "weight_unit": "lbs", "is_misplaced": false, "is_contaminated": false},
+                {"material": "Polystyrene Foam Blocks", "weight": 1.16, "percentage": 0.04, "weight_unit": "lbs", "is_misplaced": false, "is_contaminated": false},
+                {"material": "Polystyrene Foam Peanuts", "weight": 0.27, "percentage": 0.01, "weight_unit": "lbs", "is_misplaced": false, "is_contaminated": false},
+                {"material": "Plastic Film", "weight": 7.67, "percentage": 0.25, "weight_unit": "lbs", "is_misplaced": false, "is_contaminated": false},
+                {"material": "Rigid Plastic", "weight": 30.13, "percentage": 0.97, "weight_unit": "lbs", "is_misplaced": false, "is_contaminated": false},
+                {"material": "Fluorescent Bulbs/Tubes", "weight": 0.31, "percentage": 0.01, "weight_unit": "lbs", "is_misplaced": false, "is_contaminated": false},
+                {"material": "Printer Toner", "weight": 1.88, "percentage": 0.06, "weight_unit": "lbs", "is_misplaced": false, "is_contaminated": false},
+                {"material": "Food Donation", "weight": 142.71, "percentage": 4.60, "weight_unit": "lbs", "is_misplaced": false, "is_contaminated": false},
+                {"material": "Oil", "weight": 33.33, "percentage": 1.07, "weight_unit": "lbs", "is_misplaced": false, "is_contaminated": false},
+                {"material": "OBRC", "weight": 255.57, "percentage": 8.23, "weight_unit": "lbs", "is_misplaced": false, "is_contaminated": false}
+            ]
+        },
+        {
+            "name": "Non-Recoverable Materials", "total_weight": 784.88, "total_percentage": 25.28, "weight_unit": "lbs",
+            "contents": [
+                {"material": "True Waste", "weight": 147.48, "percentage": 4.75, "weight_unit": "lbs", "is_misplaced": false, "is_contaminated": false},
+                {"material": "Single Use Cups", "weight": 2.94, "percentage": 0.09, "weight_unit": "lbs", "is_misplaced": false, "is_contaminated": false},
+                {"material": "Single Use To-Go Containers", "weight": 7.26, "percentage": 0.23, "weight_unit": "lbs", "is_misplaced": false, "is_contaminated": false},
+                {"material": "Single Use Utensils", "weight": 0.48, "percentage": 0.02, "weight_unit": "lbs", "is_misplaced": false, "is_contaminated": false},
+                {"material": "Restroom Waste", "weight": 2.99, "percentage": 0.10, "weight_unit": "lbs", "is_misplaced": false, "is_contaminated": false},
+                {"material": "Liquid", "weight": 246.51, "percentage": 7.94, "weight_unit": "lbs", "is_misplaced": false, "is_contaminated": false},
+                {"material": "Compost", "weight": 265.77, "percentage": 8.56, "weight_unit": "lbs", "is_misplaced": true, "is_contaminated": false},
+                {"material": "Readily Recyclable Materials", "weight": 86.31, "percentage": 2.78, "weight_unit": "lbs", "is_misplaced": true, "is_contaminated": false},
+                {"material": "Other Recoverable Material", "weight": 25.14, "percentage": 0.81, "weight_unit": "lbs", "is_misplaced": true, "is_contaminated": false}
+            ]
+        }
+
+    ],
+    "grand_total_weight":3104.34,"grand_total_percentage":100.00,"weight_unit":"lbs"
+}]
