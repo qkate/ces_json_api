@@ -20,3 +20,13 @@ post '/submit' do
 
   Sample.create(business_type: 'Retail', location: {latitude: 123}, collection_bins: [{name: 'Readily Recyclable'}])
 end
+
+get '/api/samples' do
+  @samples = Sample.all
+  erb :list
+end
+
+get '/api/samples/:id' do |id|
+  @sample = Sample.find(id)
+  erb :show
+end
