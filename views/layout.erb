@@ -1,16 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>CES Uploader</title>
+  <title>CES Open Data Project</title>
   <!-- Bootstrap -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
 </head>
 <body>
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topnav-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">CES Open Data Project</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="topnav-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="/"><i class="glyphicon glyphicon-home"></i> Home</a></li>
+          <li><a href="/samples"><i class="glyphicon glyphicon-th-list"></i> Sample Data</a></li>
+          <li><a href="/submit"><i class="glyphicon glyphicon-upload"></i> Submit</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
   <%= yield %>
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <!-- Include all compiled plugins -->
-  <script src="js/bootstrap.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <% if @js %>
+    <% @js.each do |script| %>
+      <script src="<%= "/js/#{script}.js" %>"></script>
+    <% end %>
+  <% end %>
 </body>
 </html>
