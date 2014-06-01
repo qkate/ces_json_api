@@ -4,6 +4,8 @@ Bundler.require(:default)
 
 Mongoid.load!("config/mongoid.yml")
 
+require 'sinatra/json'
+
 # auto-require anything in /lib
 Dir.glob("lib/*") { |file| require_relative file }
 
@@ -25,12 +27,7 @@ post '/submit' do
   Parser.parse(params['file'][:filename], params['file'][:tempfile])
 end
 
-get '/api/samples' do
+get '/api/samples.?:format?' do
   @samples = Sample.all
-  erb :list
-end
-
-get '/api/samples/:id' do |id|
-  @sample = Sample.find(id)
-  erb :show
+  json @samples
 end
