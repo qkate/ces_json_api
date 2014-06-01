@@ -9,7 +9,7 @@ Dir.glob("lib/*") { |file| require_relative file }
 
 if production?
   use Rack::Auth::Basic, "Restricted Area" do |username, password|
-    username == 'admin' and password == 'admin'
+    username == ENV['BASIC_USER'] and password == ENV['BASIC_PASS']
   end
 end
 
