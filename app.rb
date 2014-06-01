@@ -19,8 +19,13 @@ get '/' do
   erb :index
 end
 
+get '/samples' do
+  @js = ['samples']
+  erb :samples
+end
+
 get '/submit/?' do
-  redirect '/'
+  erb :submit
 end
 
 post '/submit' do
