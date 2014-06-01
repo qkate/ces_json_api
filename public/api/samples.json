@@ -1,4 +1,4 @@
-{
+[{
     "collected_on":"2014-04-01T00:00:00Z", "business_type": "Retail", "sqft": 1200,
     "location": {
         "latitude": 123, "longitude": 123, "region": "Lloyd Eco District", "zip_code": 97214,
@@ -64,4 +64,4 @@
 
     ],
     "grand_total_weight":3104.34,"grand_total_percentage":100.00,"weight_unit":"lbs"
-}
+}]
