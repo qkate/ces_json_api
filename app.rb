@@ -22,9 +22,7 @@ get '/submit/?' do
 end
 
 post '/submit' do
-  # Parser.parse(params['file'][:filename], params['file'][:tempfile])
-
-  Sample.create(business_type: 'Retail', location: {latitude: 123}, collection_bins: [{name: 'Readily Recyclable'}])
+  Parser.parse(params['file'][:filename], params['file'][:tempfile])
 end
 
 get '/api/samples' do
