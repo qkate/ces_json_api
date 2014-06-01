@@ -7,6 +7,12 @@ Mongoid.load!("config/mongoid.yml")
 # auto-require anything in /lib
 Dir.glob("lib/*") { |file| require_relative file }
 
+if production?
+  use Rack::Auth::Basic, "Restricted Area" do |username, password|
+    username == 'admin' and password == 'admin'
+  end
+end
+
 get '/' do
   erb :index
 end
