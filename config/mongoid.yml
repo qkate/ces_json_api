@@ -7,7 +7,7 @@ development:
 production:
   sessions:
     default:
-      uri: <%= ENV['MONGOLAB_URL'] %>
+      uri: <%= ENV['MONGOLAB_URI'] %>
       options:
         # The default consistency is :eventual, which reads from
         #secondaries when possible.
