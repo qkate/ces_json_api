@@ -4,6 +4,8 @@ Bundler.require(:default)
 
 Mongoid.load!("config/mongoid.yml")
 
+require 'sinatra/json'
+
 # auto-require anything in /lib
 Dir.glob("lib/*") { |file| require_relative file }
 
@@ -27,12 +29,7 @@ post '/submit' do
   Sample.create(business_type: 'Retail', location: {latitude: 123}, collection_bins: [{name: 'Readily Recyclable'}])
 end
 
-get '/api/samples' do
+get '/api/samples.?:format?' do
   @samples = Sample.all
-  erb :list
-end
-
-get '/api/samples/:id' do |id|
-  @sample = Sample.find(id)
-  erb :show
+  json @samples
 end
